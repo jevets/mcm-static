@@ -4,5 +4,8 @@ module.exports = function (config) {
     output: '_site',
   }
 
+  config.addPassthroughCopy('src/css/style.css')
+  config.passthroughFileCopy = true
+
   return config
 }
