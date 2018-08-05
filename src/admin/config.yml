@@ -22,4 +22,6 @@ collections:
         name: "index"
         file: "src/index.md"
         fields:
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Foo", name: "foo", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
