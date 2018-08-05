@@ -1,6 +1,6 @@
 backend:
-  name: jevets/mcm-static
-  url: localhost:8080/admin
+  name: github
+  repo: jevets/mcm-static
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
