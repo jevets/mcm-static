@@ -1,5 +1,4 @@
-backend:
-  name: 'The Backend `name` value'
+
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
