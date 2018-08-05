@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: jevets/mcm-static
+  branch: master
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
