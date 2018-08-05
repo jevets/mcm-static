@@ -6,6 +6,7 @@ module.exports = function (config) {
   }
 
   config.addPassthroughCopy('src/css/style.css')
+  config.addPassthroughCopy('src/robots.txt')
   config.passthroughFileCopy = true
 
   return config
