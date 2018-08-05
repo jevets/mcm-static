@@ -7,11 +7,19 @@ public_folder: "/uploads"
 collections:
   - name: "materials"
     label: "Materials"
-    folder: "src/materials"
+    folder: "src/materials/"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "strnig"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Heading", name: "heading", widget: "string"}
       - {label: "Subheading", name: "subheading", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Index"
+        name: "index"
+        file: "src/index.md"
+        fields:
+          - {label: "Foo", name: "foo", widget: "string"}
