@@ -1,3 +1,4 @@
+backend: '/admin'
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
