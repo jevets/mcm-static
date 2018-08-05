@@ -1,0 +1,13 @@
+media_folder: "src/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "materials"
+    label: "Materials"
+    folder: "materials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "strnig"}
+      - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Subheading", name: "subheading", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
