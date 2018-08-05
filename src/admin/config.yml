@@ -1,4 +1,6 @@
-
+backend:
+  name: 'mcm-static'
+  url: localhost:8080/admin
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
