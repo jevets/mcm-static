@@ -5,16 +5,16 @@ backend:
 media_folder: "src/uploads"
 public_folder: "/uploads"
 collections:
-  # - name: "materials"
-  #   label: "Materials"
-  #   folder: "src/materials/"
-  #   create: true
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - {label: "Title", name: "title", widget: "string"}
-  #     - {label: "Heading", name: "heading", widget: "string"}
-  #     - {label: "Subheading", name: "subheading", widget: "string"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
+  - name: "materials"
+    label: "Materials"
+    folder: "src/materials/"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Subheading", name: "subheading", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
