@@ -1,6 +1,4 @@
 ---
-title: "Thermal Composites"
-layout: /layouts/default.pug
-foo: "bar"
+foo: baz
 ---
-Hello world
+
