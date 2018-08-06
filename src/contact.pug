@@ -5,7 +5,7 @@ heading: "Contact Us"
 lead: "Let's have a heated discussion."
 ---
 block content
-  table
+  table.table.is-striped
     tbody
       tr
         th(width="33%") Call Us
@@ -22,6 +22,8 @@ block content
       tr
         th Mailing Address
         td #{ company.address }
-  form(method="POST" netlify name="contact")
-    p: input(name="name")
-    p: button(type="submit") Submit
+  .card
+    .card-header
+      .card-header-title Send a Message
+    .card-body
+      include /contact-form

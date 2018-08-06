@@ -1,6 +1,8 @@
 extends /layouts/main.pug
 
 block body
-  include /page-header
-  block content
-    | !{ content }
+  .container
+    include /page-header
+  .container
+    block content
+      | !{ content }

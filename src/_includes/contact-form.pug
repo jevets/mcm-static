@@ -1,0 +1,25 @@
+form(netlify)
+  .form-group
+    label(for="name") Name
+    input#name.form-control(
+      required
+      name="Name"
+      placeholder="Your Name"
+    )
+  .form-group
+    label(for="email") Email
+    input#email.form-control(
+      required
+      name="Email"
+      type="email"
+      placeholder="Your Email Address"
+    )
+  .form-group
+    label(for="message") Message
+    textarea#message.form-control(
+      required
+      name="Message"
+      placeholder="Your Message"
+    )
+  .form-group
+    button.btn.btn-primary(type="submit") Send Message
