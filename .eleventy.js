@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 module.exports = function (config) {
   config.dir = {
     input: 'src',
@@ -24,13 +26,10 @@ module.exports = function (config) {
 
   // Product Lines
   config.addCollection('productLines', function (collection) {
-    return collection
-      .getFilteredByGlob('src/product-lines/*.md')
-      .sort(function (a, b) {
-        console.log('a temp: ' a.data.temperature)
-        console.log('b temp: ' b.data.temperature)
-        return Number(a.data.temperature) < Number(b.data.temperature)
-      })
+    let lines = collection.getFilteredByGlob('src/product-lines/*.md')
+    return _.orderBy(lines, ['data.temperature', 'data.title'], ['desc', 'asc'])
+    // let sortedByTemperatureDesc = _sortBy(lines, 'data.temperature')
+    // return _reverse(_sortBy(lines, 'data.temperature', 'data.title'))
   })
 
   // Forms / Materials

@@ -1,4 +1,5 @@
 extends /layouts/default
+include /_mixins
 
 append content
   each line in collections.productLines
@@ -6,6 +7,9 @@ append content
       .card-body
         h4.card-title
           a(href=line.url)= line.data.title
-          small= line.data.temperature
+          |&nbsp;
+          small #{line.data.temperature}ºF
+            |&nbsp;/&nbsp;
+            +tempInC(line.data.temperature)
         if line.data.lead
-          p= line.data.lead
+          p.lead.mb-0= line.data.lead

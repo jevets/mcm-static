@@ -9,3 +9,9 @@ mixin crumbs(items)
     ol.breadcrumb
       each item, i in items
         +crumb(item.text, item.url || null)
+
+mixin tempInC(tempInF)
+  - let val = (Number(tempInF) - 32) * 5/9
+  - let rounded = Math.ceil(val / 10)
+  - let c = Number(rounded * 10)
+  | #{c}ºC
