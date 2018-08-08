@@ -1,6 +1,16 @@
 extends /layouts/default.pug
 
-block content
-  | !{ content }
-  include /materials-grid
-  include /materials-grid
+append content
+  h2 Thermal Materials
+  ul
+    for form in collections.materialsSimple
+      li
+        div: a(href=`${ form.url }`)= form.data.heading
+        div= form.data.lead
+
+  h2 Fabricated Materials
+  ul
+    for form in collections.materialsComposite
+      li
+        div: a(href=`${ form.url }`)= form.data.heading
+        div= form.data.lead

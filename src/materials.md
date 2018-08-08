@@ -1,6 +1,5 @@
 ---
 title: "High Temperature Materials"
-layout: /layouts/materials.pug
 heading: "High Temperature Materials"
 lead: "Our product offering is extensive. Just like our expertise."
 ---

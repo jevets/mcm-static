@@ -1,0 +1,11 @@
+extends /layouts/default
+
+append content
+  each line in collections.productLines
+    .card.mb-4
+      .card-body
+        h4.card-title
+          a(href=line.url)= line.data.title
+          small= line.data.temperature
+        if line.data.lead
+          p= line.data.lead

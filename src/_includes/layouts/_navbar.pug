@@ -1,0 +1,22 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(
+    href="/"
+    title="Return to the home page"
+  )
+    img(
+      src="/assets/img/logo-emblem-over-trans--30.png"
+      alt=`${site.title}`
+    )
+  button.navbar-toggler(
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+  )
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbarSupportedContent
+    ul.navbar-nav.mr-auto
+      for item in site.menu
+        - var linkClass = page.url === item.uri ? 'active' : ''
+        li.nav-item(class=`${linkClass}`)
+          a.nav-link(href=`${item.uri}`) #{ item.text }

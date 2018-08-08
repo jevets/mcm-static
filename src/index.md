@@ -1,5 +1,5 @@
 ---
 title: Home Page
-foo: baz
+layout: /layouts/default.pug
 ---
 index

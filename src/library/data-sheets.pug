@@ -1,0 +1,23 @@
+---
+title: "Data Sheets"
+heading: "Data Sheets"
+---
+.row
+  .col-md-4
+    .card
+      .card-header Filter by Fiber Type
+      .nav.nav-pills.flex-column
+        a.nav-link.active(href=page.url) All Fiber Types
+        each fiber in collections.fibers
+          - let slug = fiber.data.page.fileSlug
+          a.nav-link(
+            href=`${page.url}?fiber=${slug}`
+          )= fiber.data.title
+  .col-md-8
+    for line in collections.productLines
+      .card.mb-4
+        .card-header
+          a(href=line.url)= line.data.title
+        nav.nav.nav-pills.flex-column
+          //- each file in collections.libraryDataSheets
+

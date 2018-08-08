@@ -1,0 +1,23 @@
+extends /layouts/main.pug
+include /_mixins.pug
+
+block body
+  include /layouts/_navbar
+  .container.py-2
+    -
+      let breadcrumbs = [
+        { text: 'Home', url: '/' },
+        { text: 'Materials', url: '/materials/' },
+        { text: heading }
+      ]
+    +crumbs(breadcrumbs)
+  .container.py-4
+    .row
+      .col-md-4
+        code #image
+      .col-md-8
+        include /page-header
+        | !{ content }
+  .container.my-4
+    h2 Products
+    p: code #product-grid

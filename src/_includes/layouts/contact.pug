@@ -1,0 +1,52 @@
+extends /layouts/default.pug
+
+block content
+  .my-5
+    table.table.is-striped
+      tbody
+        tr
+          th(width="33%") Call Us
+          td: a(href=`tel:${company.phone}`) #{ company.phone }
+        tr
+          th Email
+          td: a(href=`mailto:${company.email}`) #{ company.email }
+        tr
+          th Phone (local)
+          td: a(href=`tel:${company.phone_local}`) #{ company.phone_local }
+        tr
+          th Fax
+          td: a(href=`tel:${ company.fax }`) #{ company.fax }
+        tr
+          th Mailing Address
+          td #{ company.address }
+
+  .card
+    .card-header
+      .card-header-title Send a Message
+    .card-body
+      form(netlify)
+        .form-group
+          label(for="name") Name
+          input#name.form-control(
+            required
+            name="Name"
+            placeholder="Your Name"
+          )
+        .form-group
+          label(for="email") Email
+          input#email.form-control(
+            required
+            name="Email"
+            type="email"
+            placeholder="Your Email Address"
+          )
+        .form-group
+          label(for="message") Message
+          textarea#message.form-control(
+            required
+            name="Message"
+            placeholder="Your Message"
+          )
+        .form-group.mb-0
+          button.btn.btn-primary(type="submit") Send Message
+

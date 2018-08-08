@@ -1,0 +1,14 @@
+extends /layouts/default.pug
+
+append content
+  .row
+    for industry in collections.industry
+      .col-md-4.col-lg-6
+        .card.mb-4
+          .card-img-top
+            img(
+              src=`https://files.mcallistermills.com/images/industries/${industry.fileSlug}.jpg`
+            )
+          .card-body
+            p: strong: a(href=`${industry.url}`) #{ industry.data.heading }
+            p #{ industry.data.teaser }

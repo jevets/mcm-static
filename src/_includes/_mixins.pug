@@ -1,0 +1,11 @@
+mixin crumb(text, href)
+  if (href)
+    li.breadcrumb-item: a(href=href) #{text}
+  else
+    li.breadcrumb-item.active #{text}
+
+mixin crumbs(items)
+  nav(aria-label="breadcrumb")&attributes(attributes)
+    ol.breadcrumb
+      each item, i in items
+        +crumb(item.text, item.url || null)

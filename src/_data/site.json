@@ -1,0 +1,25 @@
+{
+  "title": "Thermal Composites",
+  "menu": [
+    {
+      "text": "Thermal Materials",
+      "uri": "/materials/"
+    },
+    {
+      "text": "Fabricated Materials",
+      "uri": "/materials/"
+    },
+    {
+      "text": "Fabrication Services",
+      "uri": "/fabrication/"
+    },
+    {
+      "text": "Documents",
+      "uri": "/library/"
+    },
+    {
+      "text": "About Us",
+      "uri": "/about/"
+    }
+  ]
+}
