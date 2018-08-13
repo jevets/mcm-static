@@ -3,7 +3,8 @@ extends /layouts/main.pug
 block body
   include /layouts/_navbar
   .container.py-4
-    include /page-header
+    block page-header
+      include /page-header
   .container
     block content
       | !{ content }

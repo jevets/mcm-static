@@ -1,5 +1,6 @@
 ---
 title: Flamegard®
+name: Flamegard®
 heading: Flamegard®
 lead: Silicone-Coated Sleeving
 teaser: Rubber-coated (silicone) braided fiberglass sleeving

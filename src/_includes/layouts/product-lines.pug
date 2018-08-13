@@ -6,9 +6,9 @@ append content
     .card.mb-4
       .card-body
         h4.card-title
-          a(href=line.url)= line.data.title
+          a(href=line.url)= line.data.name
           |&nbsp;
-          small #{line.data.temperature}ºF
+          small.float-right #{line.data.temperature}ºF
             |&nbsp;/&nbsp;
             +tempInC(line.data.temperature)
         if line.data.lead

@@ -1,5 +1,6 @@
 ---
 title: TREO®
+name: TREO®
 heading: TREO®
 lead: Ceramic Free Needled Mat
 teaser: Bio-soluble, economical, vibration resistant insulation blanket

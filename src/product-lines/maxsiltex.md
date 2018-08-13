@@ -1,5 +1,6 @@
 ---
 title: Maxsil®Tex
+name: Maxsil®Tex
 lead: High Purity Silica Fibers
 teaser: Highest temperature silica made from pure silica fibers, not from leached glass
 temperature: 2000

@@ -1,7 +1,14 @@
 {
-  "phone": "+1-800-662-9745",
+  "name": "McAllister Mills",
+  "name_legal": "McAllister Mills, Inc.",
   "email": "sales@mcallistermills.com",
+  "phone": "+1-800-662-9745",
   "phone_local": "+1-276-773-3114",
   "fax": "+1-276-773-2451",
-  "address": "P.O. Box 590, Independence, VA 24348"
+  "address": "P.O. Box 590, Independence, VA 24348",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/company/mcallister-mills-inc-",
+    "facebook": "https://www.facebook.com/pages/McAllister-Mills/110704905970903",
+    "googleplus": "https://plus.google.com/112772624830779204321"
+  }
 }

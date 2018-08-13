@@ -1,5 +1,6 @@
 ---
 title: MidSil
+name: MidSil
 lead: Medium Level Silica Fibers
 teaser: When fiberglass textiles are not enough, tough MidSil textiles deliver.
 temperature: 1350

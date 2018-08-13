@@ -1,5 +1,6 @@
 ---
 title: Leached Silica
+name: Leached Silica
 heading: Leached Silica
 lead: Economical silica textiles
 temperature: 2000

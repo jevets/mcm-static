@@ -27,7 +27,7 @@ module.exports = function (config) {
   // Product Lines
   config.addCollection('productLines', function (collection) {
     let lines = collection.getFilteredByGlob('src/product-lines/*.md')
-    return _.orderBy(lines, ['data.temperature', 'data.title'], ['desc', 'asc'])
+    return _.orderBy(lines, ['data.temperature', 'fielSlug'], ['desc', 'asc'])
     // let sortedByTemperatureDesc = _sortBy(lines, 'data.temperature')
     // return _reverse(_sortBy(lines, 'data.temperature', 'data.title'))
   })

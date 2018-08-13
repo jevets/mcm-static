@@ -1,0 +1,16 @@
+---
+links:
+  - label: Data Sheets
+    uri: /library/data-sheets/
+  - label: Safety Data Sheets
+    uri: /library/safety-data-sheets/
+  - label: Brochures
+    uri: /library/brochures/
+---
+extends /layouts/default.pug
+
+append content
+  ul
+    each link in links
+      li
+        a(href=link.uri)= link.label

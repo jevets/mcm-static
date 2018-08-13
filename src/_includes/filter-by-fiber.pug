@@ -1,0 +1,9 @@
+.card
+  .card-header Filter by Fiber Type
+  .nav.nav-pills.flex-column
+    a.nav-link.active(href=page.url) All Fiber Types
+    each fiber in collections.fibers
+      - let slug = fiber.data.page.fileSlug
+      a.nav-link(
+        href=`${page.url}?fiber=${slug}`
+      )= fiber.data.title

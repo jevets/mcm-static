@@ -1,5 +1,6 @@
 ---
 title: Ricochet™
+name: Ricochet™
 heading: Ricochet™
 lead: Reflective Aluminum-Coated Fabrics
 teaser: Reflect the heat away with aluminum vapor depositied textiles.

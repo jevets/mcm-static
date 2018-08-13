@@ -1,0 +1,15 @@
+extends /layouts/default
+include /_mixins
+
+block page-header
+  h1.page-title= title
+    small.text-muted #{temperature}ºF
+      |&nbsp;/&nbsp;
+      +tempInC(temperature)
+  p.lead= lead
+
+block content
+  .p-4.bg-light
+    | !{ content }
+  h2.my-4 Products
+  h2.my-4 Downloads
